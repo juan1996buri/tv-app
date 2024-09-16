@@ -2,8 +2,14 @@
 
 Instrucciones para ejecutar proyecto
 
+# instalar los paquetes
+
 flutter pub get
+
+# correr la app
 
 flutter run
 
-flutter apk
+# generar apk
+
+flutter build apk
