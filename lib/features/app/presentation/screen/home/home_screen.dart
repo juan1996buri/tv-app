@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart'
@@ -5,6 +6,7 @@ import 'package:flutter/services.dart'
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:tvapp/features/app/presentation/screen/home/cubit/home_cubit.dart';
 import 'package:tvapp/features/app/presentation/screen/video_player/video_player_screen.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({
@@ -14,6 +16,9 @@ class HomeScreen extends StatefulWidget {
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
+
+const _projectURL =
+    "https://play.google.com/store/search?q=pub%3ATheDan98&c=apps&hl=es_EC";
 
 class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   @override
@@ -43,14 +48,35 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     final provider = context.watch<HomeCubit>().state;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text(
-          "Tv online",
+          "Tv online ",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontStyle: FontStyle.italic,
           ),
         ),
+        actions: [
+          GestureDetector(
+            onTap: () async {
+              if (!await launchUrl(
+                Uri.parse(
+                  _projectURL,
+                ),
+              )) {
+                throw Exception();
+              }
+            },
+            child: const Text(
+              "TheDan98 ",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          )
+        ],
         backgroundColor: Colors.white24,
       ),
       body: Column(
@@ -109,41 +135,65 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
           //   ),
           // ),
           // const SizedBox(height: 20),
-          Expanded(
-            child: ListView.separated(
-              separatorBuilder: (context, index) => const Divider(),
-              itemCount: provider.channelList.length,
-              itemBuilder: (context, index) {
-                final itemChannel = provider.channelList[index];
-                return ListTile(
-                  onTap: () async {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => VideoPlayerScreen(
-                          urlVideo: itemChannel.url,
+
+          if (provider.channelList.isNotEmpty)
+            Expanded(
+              child: ListView.separated(
+                separatorBuilder: (context, index) =>
+                    const SizedBox(height: 10),
+                itemCount: provider.channelList.length,
+                itemBuilder: (context, index) {
+                  final itemChannel = provider.channelList[index];
+                  return Card(
+                    color: itemChannel.title ==
+                            context.watch<HomeCubit>().state.channelEntity.title
+                        ? const Color.fromARGB(255, 139, 248, 193)
+                        : Colors.white,
+                    child: Padding(
+                      padding: const EdgeInsets.all(4),
+                      child: ListTile(
+                        onTap: () async {
+                          context
+                              .read<HomeCubit>()
+                              .changeChannelEntity(channelEntity: itemChannel);
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (_) => VideoPlayerScreen(
+                                urlVideo: itemChannel.url,
+                              ),
+                            ),
+                          );
+                        },
+                        title: Text(
+                          itemChannel.title,
+                          style: const TextStyle(
+                            fontStyle: FontStyle.italic,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        trailing: CircleAvatar(
+                          child: CachedNetworkImage(
+                            scale: 1.0,
+                            fit: BoxFit.cover,
+                            width: 60,
+                            height: 60,
+                            imageUrl: itemChannel.logo,
+                            placeholder: (context, url) =>
+                                const CircularProgressIndicator(),
+                            errorWidget: (context, url, error) =>
+                                const Icon(Icons.error),
+                          ),
                         ),
                       ),
-                    );
-                  },
-                  title: Text(
-                    itemChannel.title,
-                    style: const TextStyle(
-                      fontStyle: FontStyle.italic,
-                      fontWeight: FontWeight.w500,
                     ),
-                  ),
-                  trailing: ClipOval(
-                    child: Image.network(
-                      itemChannel.logo,
-                      width: 60,
-                      height: 60,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                );
-              },
-            ),
-          )
+                  );
+                },
+              ),
+            )
+          else
+            const Center(
+              child: CircularProgressIndicator(),
+            )
         ],
       ),
     );

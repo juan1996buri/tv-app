@@ -8,151 +8,103 @@
   {
     "title": "13 Teleseries",
     "url": "https://origin.dpsgo.com/ssai/event/f4TrySe8SoiGF8Lu3EIq1g/master.m3u8",
-    "id": 1,
+    "id": 2,
     "logo": "https://i.imgur.com/Agtfbfi.png"
   },
   {
     "title": "24 Horas Internacional",
     "url": "https://rtvelivestream.akamaized.net/rtvesec/24h/24h_main_dvr.m3u8",
-    "id": 1,
+    "id": 3,
     "logo": "https://i.imgur.com/IUVRm5L.png"
   },
   {
     "title": "24/7 Canal de Noticias",
     "url": "https://panel.host-live.com:19360/cn247tv/passthru.m3u8",
-    "id": 1,
+    "id": 4,
     "logo": "https://i.imgur.com/4hDCB1M.png"
   },
   {
     "title": "504 TV",
     "url": "https://mediacp.us:8081/504tvhn/index.m3u8",
-    "id": 1,
+    "id": 5,
     "logo": "https://i.imgur.com/c2HLI3k.png"
   },
   {
     "title": "ANIMESTATION",
     "url": "https://ssh101-fl.bozztv.com/ssh101/livestreamingtv/index.m3u8",
-    "id": 1,
+    "id": 6,
     "logo": "https://web.archive.org/web/20240509182044if_/https://pbs.twimg.com/profile_images/1744338643957780480/24Kv02RD_400x400.jpg"
   },
   {
     "title": "7 TeleValencia",
     "url": "https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3u8",
-    "id": 1,
+    "id": 7,
     "logo": "https://i.imgur.com/ILfXDRs.png"
   },
   {
     "title": "Canal 9 Televida",
     "url": "https://unlimited1-buenosaires.dps.live/televidaar/televidaar.smil/playlist.m3u8",
-    "id": 1,
+    "id": 8,
     "logo": "https://telechancho.github.io/telechancho-iptv/tvlogos/9Televida.png"
   },
   {
     "title": "Cinco TV",
     "url": "https://videostream.shockmedia.com.ar:19360/cincotv/cincotv.m3u8",
-    "id": 1,
+    "id": 9,
     "logo": "https://telechancho.github.io/telechancho-iptv/tvlogos/CincoTV.png"
   },
   {
     "title": "Diez TV Úbeda",
     "url": "https://streaming.cloud.innovasur.es/mmj/index.m3u8",
-    "id": 1,
+    "id": 10,
     "logo": "https://i.imgur.com/o2a7s4W.png"
   },
   {
     "title": "Disney Channel",
-    "url": "https://i.pinimg.com/736x/8f/63/30/8f6330c95a05dfb8b0ee914486116afc.jpg",
-    "id": 1,
+    "url": "https://spa-ha-p005.cdn.masmediatv.es/SVoriginOperatorEdge2/smil:21_HD.smil/manifest.m3u8",
+    "id": 11,
     "logo": "https://i.pinimg.com/736x/8f/63/30/8f6330c95a05dfb8b0ee914486116afc.jpg"
   },
   {
     "title": "MAX Anime",
     "url": "https://vcp14.myplaytv.com/maxanime/maxanime/playlist.m3u8",
-    "id": 1,
+    "id": 12,
     "logo": "https://i.imgur.com/Oj3hEBh.jpg"
   },
   {
     "title": "POP World TV ",
     "url": "https://janus.xpbroadcasting.com:8443/hls/popworld.m3u8",
-    "id": 1,
+    "id": 13,
     "logo": "https://i.imgur.com/LQB6G3s.jpg"
   },
   {
     "title": "RT en Español",
     "url": "https://rt-esp.rttv.com/live/rtesp/playlist.m3u8",
-    "id": 1,
+    "id": 14,
     "logo": "https://telechancho.github.io/telechancho-iptv/tvlogos/RT.png"
   },
   {
     "title": "Señal Colombia",
     "url": "https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8",
-    "id": 1,
+    "id": 15,
     "logo": "https://telechancho.github.io/telechancho-iptv/tvlogos/SenalColombia.png"
   },
   {
     "title": "Anime TV",
     "url": "https://stmv1.srvif.com/animetv/animetv/playlist.m3u8",
-    "id": 1,
+    "id": 16,
     "logo": "https://www.cxtv.com.br/img/Tvs/Logo/webp-m/8e2460502f204b225c89d644e88153a8.webp"
   },
   {
     "title": "WOW TV",
     "url": "https://cdn.elsalvadordigital.com:1936/wowtv/smil:wowtv.smil/playlist.m3u8?PlaylistM3UCL",
-    "id": 1,
+    "id": 17,
     "logo": "https://www.m3u.cl/logo/476_WOW_TV.png"
   },
   {
-    "title": "Tv Sur",
-    "url": "https://b-hls-24.doppiocdn.net/hls/168869422/168869422_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-14.doppiocdn.net/hls/157913010/157913010_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-18.doppiocdn.net/hls/137040113/137040113_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-10.doppiocdn.net/hls/111676260/111676260_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-15.doppiocdn.net/hls/43377224/43377224_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-13.doppiocdn.net/hls/156603543/156603543_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-03.sacdnssedge.com/hls/110912307/110912307.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-21.doppiocdn.net/hls/170414021/170414021_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
-  },
-  {
-    "title": "Tv Sur",
-    "url": "https://b-hls-16.doppiocdn.net/hls/97157274/97157274_480p.m3u8",
-    "id": 1,
-    "logo": "https://static.vecteezy.com/system/resources/previews/004/967/183/non_2x/anime-eyes-vision-fire-pop-culture-logo-design-vector.jpg"
+    "title": "13C (1080p)",
+    "url": "https://origin.dpsgo.com/ssai/event/GI-9cp_bT8KcerLpZwkuhw/master.m3u8",
+    "id": 18,
+    "logo": "https://i.ibb.co/3fbvkZ3/13cultura.png"
   }
 ]

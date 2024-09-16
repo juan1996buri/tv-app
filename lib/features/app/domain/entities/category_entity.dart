@@ -63,8 +63,15 @@ const fileLocation = "assets/tv/";
 
 List<CategoryEntity> categoryList = [
   CategoryEntity(
-    title: "Dibujo",
-    id: 1,
-    channelList: [],
+    title: "",
+    id: 0,
+    channelList: [
+      ChannelEntity(
+        title: "",
+        url: "",
+        id: 0,
+        logo: "",
+      ),
+    ],
   ),
 ];

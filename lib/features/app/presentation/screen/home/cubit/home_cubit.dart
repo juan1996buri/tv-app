@@ -8,9 +8,11 @@ class HomeCubit extends Cubit<HomeState> {
   HomeCubit()
       : super(
           HomeState(
-              categoryList: categoryList,
-              channelList: categoryList.first.channelList,
-              categoryEntity: categoryList.first),
+            categoryList: categoryList,
+            channelList: categoryList.first.channelList,
+            categoryEntity: categoryList.first,
+            channelEntity: categoryList.first.channelList.first,
+          ),
         );
 
   void changeChannelList({required CategoryEntity categoryEntity}) {
@@ -37,6 +39,11 @@ class HomeCubit extends Cubit<HomeState> {
         channelList: resp,
       ),
     );
+  }
+
+  void changeChannelEntity({required ChannelEntity channelEntity}) {
+    final newState = state.copyWith(channelEntity: channelEntity);
+    emit(newState);
   }
 }
 
